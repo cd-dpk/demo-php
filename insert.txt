@@ -1,0 +1,12 @@
+insert into Category values ( 1,'Men');
+insert into Category values	( 2,'Women');				
+insert into Category values (3,'Home');
+insert into Category values (4,'Abroad');
+insert into Category values (5,'Village');
+insert into Product values (101,'baby.png',1,'T-Shirt','This is good T-Shirt',250,200,2, NOW()); 
+insert into Product values (102,'baby.png',3,'Shoes','This is good Shoes',150,100,1, NOW());
+insert into Product values	(201,'baby.png',4,'Shirt','This is good Shirt',50,20,2, NOW());
+insert into Product values	(301,'baby.png',1,'Sunglass','This is good Sunglass',25,10,2, NOW());				
+insert into Product values	(401,'baby.png',2,'Bag','This is good Bag',500,400,2, NOW());				
+insert into Product values	(501,'baby.png',2,'Pen',This is a good  pen',50,40,2, NOW());
+insert into Product values	(601,'baby.png',2,'Try once more','A book by MCC LTD.',500,400,2, NOW());

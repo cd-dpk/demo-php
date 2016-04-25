@@ -1,0 +1,8 @@
+drop table if exists Orders;
+drop table if exists Product;
+drop table if exists Invoice;
+drop table if exists Category;
+create table Category ( category_id integer auto_increment primary key, category_name varchar (15));
+create table Product (product_id integer auto_increment primary key, product_photo_url varchar(20), category_id integer, product_name varchar(20), product_description varchar(30), price integer, special_price integer, quantity integer,entry_time timestamp, foreign key (category_id) references Category (category_id)) 
+create table Invoice (invoice_id integer auto_increment primary key, name varchar(15),email varchar(15), phone varchar(15), address varchar(25), invoice_time timestamp);
+create table Orders (invoice_id integer , product_id integer, order_des varchar(30), quantity integer,  foreign key (invoice_id) references Invoice (invoice_id), foreign key (product_id) references Product (product_id));
